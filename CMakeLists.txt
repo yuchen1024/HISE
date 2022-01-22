@@ -35,3 +35,9 @@ target_link_libraries(test_global_escrow_pke1 libmcl.a libgmp.a)
 
 add_executable(test_global_escrow_pke3 test/test_global_escrow_pke3.cpp)
 target_link_libraries(test_global_escrow_pke3 libmcl.a libgmp.a)
+
+add_executable(test_boneh_boyen test/test_boneh_boyen.cpp)
+target_link_libraries(test_boneh_boyen libmcl.a libgmp.a)
+
+add_executable(test_hies test/test_hies.cpp)
+target_link_libraries(test_hies libmcl.a libgmp.a)

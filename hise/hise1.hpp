@@ -11,13 +11,7 @@ this hpp implements CPA-secure HISE from Boneh-Franklin IBE scheme
 #include <iostream>
 #include <mcl/bls12_381.hpp>
 
-using namespace mcl::bls12;
-
-/* hash a string to a G2 point*/
-void HashToG2(G2& P, const std::string& str)
-{
-	hashAndMapToG2(P, str.c_str(), str.length());
-}
+#include "../utility/hash.hpp"
 
 struct HISE_PP
 {
